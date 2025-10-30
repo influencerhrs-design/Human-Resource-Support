@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head></head>
+
+<body>
+
+    <meta charset="UTF-8">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Resource Support - Influencer Marketing, Jobs &amp; Thrift Fashion</title>
+    <meta name="description" content="Your one-stop platform for influencer marketing jobs, career opportunities, and sustainable thrift fashion shopping">
+    <meta name="keywords" content="influencer marketing, job board, thrift shopping, sustainable fashion, career opportunities">
+    <meta property="og:title" content="Human Resource Support - Influencer Marketing, Jobs &amp; Thrift Fashion">
+    <meta property="og:description" content="Your one-stop platform for influencer marketing jobs, career opportunities, and sustainable thrift fashion shopping">
+    <meta name="twitter:title" content="Human Resource Support - Influencer Marketing, Jobs &amp; Thrift Fashion">
+    <meta name="twitter:description" content="Your one-stop platform for influencer marketing jobs, career opportunities, and sustainable thrift fashion shopping">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @layer theme {
+        :root {
+            --primary-color: #fbbf24;
+            --secondary-color: #f59e0b;
+            --accent-color: #fcd34d;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-light: #fffbeb;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(251, 191, 36, 0.3);
+        }
+        .btn-secondary {
+            @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        .btn-secondary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
+    </style>
+    <meta property="og:image" content="https://app.trickle.so/storage/app/IMG_20251013_153632.png">
+    <meta name="twitter:image" content="https://app.trickle.so/storage/app/IMG_20251013_153632.png">
+
+
+
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/FeaturedArticles.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+
+
+
+</body>
+
+</html>

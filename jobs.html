@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - Human Resource Support</title>
+    <meta name="description" content="Find influencer marketing jobs and career opportunities">
+    <meta name="keywords" content="influencer jobs, marketing careers, job board">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #fbbf24;
+            --secondary-color: #f59e0b;
+            --accent-color: #fcd34d;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-light: #fffbeb;
+        }
+    }
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .btn-secondary {
+            @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/JobList.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="jobs-app.js"></script>
+</body>
+</html>
